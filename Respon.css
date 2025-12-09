@@ -64,10 +64,8 @@ a {
   width: 100%;
   height: 100%;
 }
-.content {
-  height: 500px;
-}
-.text-movie >span {
+
+.text-movie > span {
   margin-top: 30px;
   font-size: 4.8rem;
   font-weight: bolder;
@@ -75,41 +73,73 @@ a {
   text-align: center;
 }
 
-.text-movie>span>span {
+.text-movie > span > span {
   color: hotpink;
 }
 .input-group {
-    width: 90%;
-    height: 60px;
-    margin-top: 4rem;
-    display: flex;
-    align-items: center;
-    border: 2px solid blueviolet;
-    border-radius: 15px;
-    overflow: hidden;
+  width: 90%;
+  height: 60px;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  border: 2px solid blueviolet;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.input-group span {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-group span i {
+  font-size: 20px;
+  color: blueviolet;
+}
+.input-group input {
+  display: block;
+  width: 90%;
+  height: 100%;
+  font-size: 2.2rem;
+  border: none;
+  background-color: transparent;
+  color: #eee;
+}
+.container-width {
+  max-width: 90%;
+  /* height: 500px; */
+  background-color: rgb(5, 5, 44);
+  margin: auto;
+}
 
-  }
-  .input-group span {
-    width: 20%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .input-group span i {
-    font-size: 20px;
-    color:  blueviolet;
-  }
-  .input-group input{
-    display: block;
-    width : 90%;
-    height: 100%;
-    font-size: 2.2rem;
-    border: none;
-    background-color: transparent;
-    color: #eee;
+.text {
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-left: 5%;
+}
 
-  }
+.text h1 {
+  font-size: 5rem;
+}
+
+.main-section{
+  margin-top: 5rem;
+}
+
+.grid-section{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.items{
+  height: 350px;
+  background-color: rgb(21, 21, 57);
+}
+
 @media (min-width: 768px) {
   .poster {
     width: 90%;
@@ -118,6 +148,12 @@ a {
   .poster img {
     width: 100%;
     height: 100%;
+  }
+  .text-movie {
+    margin-top: 30px;
+    width: 60%;
+    font-size: 4.8rem;
+    font-weight: bolder;
   }
 
   .input-group {
@@ -129,7 +165,6 @@ a {
     border: 2px solid blueviolet;
     border-radius: 15px;
     overflow: hidden;
-
   }
   .input-group span {
     width: 20%;
@@ -140,19 +175,24 @@ a {
   }
   .input-group span i {
     font-size: 25px;
-    color:  blueviolet;
+    color: blueviolet;
   }
-  .input-group input{
+  .input-group input {
     display: block;
-    width : 90%;
+    width: 90%;
     height: 100%;
     font-size: 2.9rem;
-    
     border: none;
     background-color: transparent;
     color: #eee;
-
   }
+  .grid-section{
+  display: grid;
+  grid-template-columns:  repeat(2,1fr);
+  grid-template-rows: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
 }
 @media (min-width: 992px) {
   .poster {
@@ -164,12 +204,12 @@ a {
     height: 100%;
   }
   .text-movie {
-  margin-top: 30px;
-  width: 30%;
-  font-size: 4.8rem;
-  font-weight: bolder;
-}
-.input-group{
+    margin-top: 30px;
+    width: 60%;
+    font-size: 4.8rem;
+    font-weight: bolder;
+  }
+  .input-group {
     width: 50%;
     height: 70px;
     margin-top: 4rem;
@@ -178,8 +218,6 @@ a {
     border: 2px solid blueviolet;
     border-radius: 15px;
     overflow: hidden;
-
-
   }
   .input-group span {
     width: 20%;
@@ -190,18 +228,24 @@ a {
   }
   .input-group span i {
     font-size: 25px;
-    color:  blueviolet;
+    color: blueviolet;
   }
-  .input-group input{
+  .input-group input {
     display: block;
-    width : 90%;
+    width: 90%;
     height: 100%;
     font-size: 2.8rem;
     border: none;
     background-color: transparent;
     color: #eee;
-
   }
+  .grid-section{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
 }
 @media (min-width: 1200px) {
   .poster {
@@ -213,12 +257,12 @@ a {
     height: 100%;
   }
   .text-movie {
-  margin-top: 30px;
-  width: 60%;
-  font-size: 4.8rem;
-  font-weight: bolder;
-}
-.input-group{
+    margin-top: 30px;
+    width: 60%;
+    font-size: 4.8rem;
+    font-weight: bolder;
+  }
+  .input-group {
     width: 45%;
     height: 80px;
     margin-top: 40px;
@@ -227,28 +271,32 @@ a {
     border-radius: 15px;
     border: 2px solid blueviolet;
     overflow: hidden;
-
   }
-.input-group span {
+  .input-group span {
     width: 20%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-.input-group span i {
+  .input-group span i {
     font-size: 30px;
-    color:  blueviolet;
+    color: blueviolet;
   }
-.input-group input{
+  .input-group input {
     display: block;
-    width : 90%;
+    width: 90%;
     height: 100%;
     font-size: 3rem;
     border: none;
     background-color: transparent;
     color: #eee;
-
   }
-
+  .grid-section{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
 }
