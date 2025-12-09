@@ -78,11 +78,36 @@ a {
 .text-movie>span>span {
   color: hotpink;
 }
-.input-group{
-    width: 80%;
-    height: 100px;
-    
-    margin-top: 40px;
+.input-group {
+    width: 90%;
+    height: 60px;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    border: 2px solid blueviolet;
+    border-radius: 15px;
+    overflow: hidden;
+
+  }
+  .input-group span {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .input-group span i {
+    font-size: 20px;
+    color:  blueviolet;
+  }
+  .input-group input{
+    display: block;
+    width : 90%;
+    height: 100%;
+    font-size: 2.2rem;
+    border: none;
+    background-color: transparent;
+    color: #eee;
 
   }
 @media (min-width: 768px) {
@@ -96,13 +121,13 @@ a {
   }
 
   .input-group {
-    width: 50%;
-    height: 45px;
+    width: 60%;
+    height: 70px;
     margin-top: 4rem;
     display: flex;
     align-items: center;
     border: 2px solid blueviolet;
-    border-radius: 5px;
+    border-radius: 15px;
     overflow: hidden;
 
   }
@@ -113,11 +138,16 @@ a {
     align-items: center;
     justify-content: center;
   }
+  .input-group span i {
+    font-size: 25px;
+    color:  blueviolet;
+  }
   .input-group input{
     display: block;
     width : 90%;
     height: 100%;
-    font-size: 2.2rem;
+    font-size: 2.9rem;
+    
     border: none;
     background-color: transparent;
     color: #eee;
@@ -141,9 +171,35 @@ a {
 }
 .input-group{
     width: 50%;
-    height: 100px;
-    background-color: blue;
-    margin-top: 40px;
+    height: 70px;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    border: 2px solid blueviolet;
+    border-radius: 15px;
+    overflow: hidden;
+
+
+  }
+  .input-group span {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .input-group span i {
+    font-size: 25px;
+    color:  blueviolet;
+  }
+  .input-group input{
+    display: block;
+    width : 90%;
+    height: 100%;
+    font-size: 2.8rem;
+    border: none;
+    background-color: transparent;
+    color: #eee;
 
   }
 }
@@ -163,10 +219,35 @@ a {
   font-weight: bolder;
 }
 .input-group{
-    width: 50%;
-    height: 100px;
-    background-color: blue;
+    width: 45%;
+    height: 80px;
     margin-top: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border: 2px solid blueviolet;
+    overflow: hidden;
+
+  }
+.input-group span {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.input-group span i {
+    font-size: 30px;
+    color:  blueviolet;
+  }
+.input-group input{
+    display: block;
+    width : 90%;
+    height: 100%;
+    font-size: 3rem;
+    border: none;
+    background-color: transparent;
+    color: #eee;
 
   }
 
